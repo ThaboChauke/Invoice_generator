@@ -3,10 +3,11 @@ import questionary as qs
 
 
 company_details = """
-King Hardware
-123 Anywhere Street
-City/State/Zip,Post code
-0123456789
+King Hardware\n
+123 Anywhere Street\n
+City/State/Zip,Post code\n
+"""
+contact_details = """0123456789
 king@co.business.co.za"""
 
 list_of_products = ["steel beams", "planks", "tiles","pipes","cables"]
@@ -62,8 +63,13 @@ def collect_info():
                 net_total = gross_total_price + vat_price
             else:
                 vat_price = 0
+                net_total = gross_total_price - vat_price
             client_data[f"item_{i}"] = {"item":items,"quantity":quantity,
                                         "unit price":unit_price,"subtotal":gross_total_price,
                                         "discount":discount_amount,"vat":vat_price,"total":net_total}
 
     return client_data
+
+
+print(collect_info())
+# print(company_details)
