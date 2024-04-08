@@ -5,6 +5,7 @@ from fpdf import FPDF
 import questionary as qs
 from colorama import Fore,Style
 
+colorama.init(autoreset=False)
 
 #####################Business information
 business_name = "King Hardware"
