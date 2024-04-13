@@ -1,50 +1,44 @@
-# Invoice_generator
+# Invoice Generator
 
-King Hardware Invoice Generator
-This project generates invoices for King Hardware, a fictional hardware store. It uses the Questionary library to gather user input, such as the client's name and the items purchased, and generates a PDF invoice using the FPDF library.
-Requirements
 
-    Python 3.x
-    Questionary library
-    FPDF library
+## Overview
 
-Usage
+The Invoice Generator is a Python script designed to streamline the process of creating invoices for businesses. This script allows users to input client information, select products, apply discounts if necessary, and generate PDF invoices.
 
-    Install the required libraries using pip:
+## Features
 
-    pip install questionary fpdf
+- **Client Information**: Input client details such as name and address.
+- **Product Selection**: Choose from a list of available products.
+- **Discount Application**: Apply discounts to the total invoice amount.
+- **VAT Calculation**: Automatically calculate VAT based on the invoice total.
+- **PDF Generation**: Generate a PDF invoice with all relevant details.
 
-Run the script using the following command:
+## Installation
 
-python invoice_generator.py
+1. Ensure you have Python installed on your system.
+2. Clone this repository to your local machine:
 
-    Follow the prompts to enter the client's name and the items purchased, including the quantity and unit price.
-    The script will generate a PDF invoice with the client's name, address, and the items purchased, including the subtotal, discount, VAT, and total.
+   - git clone https://github.com/your-username/king-hardware-invoice-generator.git
 
-Structure
+## Requirements
 
-    invoice_generator.py: The main script that generates the invoice.
-    icons8-hardware-64.png: An icon used in the invoice's header.
+    - Questionary library
+    - FPDF library
 
-Limitations
+- Install the required dependencies using pip:
+    - pip install -r requirements.txt
 
-    The project assumes that the client's address is "Default" and does not prompt the user to enter it.
-    The project does not validate the user input, such as the client's name or the items purchased.
+## Usage
 
-Future Work
+1. Run the invoice_generator.py script:
 
-    Add validation for the user input.
-    Allow the user to enter the client's address.
-    Add more options for the items purchased, such as different types of steel beams or planks.
+    - python invoice_generator.py
 
-Contributors
+2. Follow the prompts to input client information, select products, and apply discounts.
 
-    [Your Name]
+3. Once all information has been provided, the script will generate a PDF invoice in the current directory.
 
-Acknowledgements
+## Acknowledgements
 
     Questionary library: https://github.com/tmbo/questionary
     FPDF library: https://github.com/reingart/fpdf
-
-
-
