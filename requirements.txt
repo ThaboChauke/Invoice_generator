@@ -1,3 +1,4 @@
-fpdf
-questionary
-colorama
+colorama==0.4.6
+fpdf==1.7.2
+prompt-toolkit==3.0.36
+questionary==2.0.1
